@@ -44,7 +44,6 @@
     <Analyzer Include="/Users/s11905/Documents/PersonalProject/sagasi/Assets/Standard Assets/JMO Assets/Editor/JMOAssets_CartoonFXFreeWelcome.dll" />
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets/Standard Assets/JMO Assets/Cartoon FX Easy Editor/Editor/CFXEasyEditor.cs" />
      <Reference Include="UnityEngine">
      <HintPath>/Applications/Unity/Hub/Editor/2021.3.4f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
      </Reference>
@@ -889,6 +888,13 @@
       <Project>{1cef03b5-835b-f29e-5873-1ad8ea76287b}</Project>
       <Name>Coffee.UIParticle</Name>
     </ProjectReference>
+    <ProjectReference Include="Sagasi.Runtime.csproj">
+      <Project>{86e4562f-af6f-71ef-048e-7dc1373d1aea}</Project>
+      <Name>Sagasi.Runtime</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\Standard Assets\JMO Assets\Cartoon FX Easy Editor\Editor" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

@@ -1,14 +1,12 @@
-using System;
 using UnityEngine;
 
-namespace UI
+namespace Sagasi.Core
 {
-    public class TestButton : MonoBehaviour
+    public class TargetObject : MonoBehaviour
     {
         [SerializeField] private GameObject particle;
 
-        [SerializeField]
-        private Transform particleRoot;
+        [SerializeField] private Transform particleRoot;
 
         private void Awake()
         {
