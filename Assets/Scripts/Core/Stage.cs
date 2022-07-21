@@ -22,6 +22,8 @@ namespace Sagasi.Core
         /// <summary></summary>
         public int RemainTime { get; private set; }
 
+        private Coroutine _timer;
+
         /// <summary>
         /// 各種初期化 
         /// </summary>
@@ -29,7 +31,7 @@ namespace Sagasi.Core
         {
             RemainTime = TimeOverSec;
             Result = StageResult.Playing;
-            StartCoroutine(Timer());
+            _timer = StartCoroutine(Timer());
         }
 
         /// <summary>
@@ -57,6 +59,8 @@ namespace Sagasi.Core
         public void OnTargetClick()
         {
             Result = StageResult.Clear;
+            StopCoroutine(_timer);
+            Debug.Log("Clear");
             // ターゲットイメージの下にあたりエフェクトを出す
         }
 
@@ -65,7 +69,6 @@ namespace Sagasi.Core
         /// </summary>
         public void OnBackgroundClick()
         {
-            
             Debug.Log($"wrong {Input.mousePosition}");
             // マウス座標にクリックミスエフェクトを出す
         }
