@@ -1,7 +1,5 @@
 using System.Collections.Generic;
-using UnityEditor.U2D;
 using UnityEngine;
-
 namespace Sagasi.Core
 {
     /// <summary>
@@ -9,15 +7,15 @@ namespace Sagasi.Core
     /// </summary>
     public class StageManager : MonoBehaviour
     {
-        [SerializeField]
-        private List<Stage> Stages;
+        [SerializeField] private List<Stage> Stages;
+        
+        public Stage CurrentStage;
 
         private int _currentIdx;
         private List<Stage> _sortedStages;
-        
+
         //　ステージの選択はランダムIndex、全ステージプレイ後再抽選
         
-
         private Stage LoadStage()
         {
             return null;
@@ -25,7 +23,6 @@ namespace Sagasi.Core
 
         private void MakeStageIndex()
         {
-
         }
     }
 }

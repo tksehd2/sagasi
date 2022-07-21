@@ -41,9 +41,6 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="/Users/s11905/Documents/PersonalProject/sagasi/Assets/Standard Assets/JMO Assets/Editor/JMOAssets_CartoonFXFreeWelcome.dll" />
-  </ItemGroup>
-  <ItemGroup>
      <Compile Include="Assets/Standard Assets/JMO Assets/Cartoon FX/Scripts/CFX_LightIntensityFade.cs" />
      <Compile Include="Assets/Standard Assets/JMO Assets/Cartoon FX/Scripts/CFX_AutoRotate.cs" />
      <Compile Include="Assets/Standard Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_AutoStopLoopedEffect.cs" />
@@ -827,13 +824,13 @@
      </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Coffee.UIParticle.csproj">
-      <Project>{1cef03b5-835b-f29e-5873-1ad8ea76287b}</Project>
-      <Name>Coffee.UIParticle</Name>
-    </ProjectReference>
     <ProjectReference Include="Sagasi.Runtime.csproj">
       <Project>{86e4562f-af6f-71ef-048e-7dc1373d1aea}</Project>
       <Name>Sagasi.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Coffee.UIParticle.csproj">
+      <Project>{1cef03b5-835b-f29e-5873-1ad8ea76287b}</Project>
+      <Name>Coffee.UIParticle</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
